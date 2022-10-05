@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Academy Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script type="module" src="/client/script.js"></script>
+</head>
+<body>
+    <layout class="layout">
+        <nav class="navbar">
+            <div class="navbar-title">Sport club members</div>
+        </nav>
+        <div class="main-body" id="main-body">
+            <aside id="aside-bar">
+                
+            </aside>
+            <main id="content" class="content">
+                <div id="add-member-container-1024">
+                    <div id="add-member-container-content">
+                        <div id="add-member-container-top">
+                            <div id="add-title"> Add new member</div>
+                        </div>
+                        <hr>
+                        <div id="first-row-1024">
+                            <div class="first-name-wrapper">
+                                <label class="first-name">First Name</label>
+                                <input id="add-first-name-text-1024" type="text" required>
+                            </div>
+                            <div class="last-name-wrapper">
+                                <label class="last-name">Last Name</label>
+                                <input id="add-last-name-text-1024" type="text" required>
+                            </div>
+                        </div>
+                        <div id="second-row-1024">
+                            <div id="address-wrapper" class="address-wrapper">
+                                <label class="address">Address</label>
+                                <input id="add-address-text-1024" type="text" required>
+                            </div>
+                        </div>
+                        <div id="third-row-1024">
+                            <div class="city-wrapper">
+                                <label class="city">City</label>
+                                <input id="add-city-text-1024" type="text" required>
+                            </div>
+                            <div class="zip-code-wrapper">
+                                <label class="zip-code">Zip Code</label>
+                                <input id="add-zip-code-text-1024" type="text" required>
+                            </div>
+                        </div>
+                        <div id="fourth-row-1024">
+                            <div class="country-wrapper">
+                                <label class="country">Country</label>
+                                <input id="add-country-text-1024" type="text" required>
+                            </div>
+                            <div class="age-wrapper">
+                                <label class="age">Age</label>
+                                <input id="add-age-text-1024" type="text" required>
+                            </div>
+                        </div>
+                        <div id="fifth-row-1024">
+                            <div class="gender-wrapper">
+                                <label class="gender">Gender</label>
+                                <select id="add-gender">
+                                    <option selected="true" disabled="disabled"></option>
+                                    <option value="male"> Male </option>
+                                    <option value="female"> Female </option>
+                                    <option value="not-specified"> Not Specified </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div id="sixth-row-1024">
+                            <div class="activity-class-wrapper">
+                                <label class="activity-class">Activity Class</label>
+                                <div class="activity-class-buttons">
+                                    <div class="activity-class-professional">
+                                     <input type="radio" name="choose-add" id="add-professional">
+                                     <label for="professional">professional</label>
+                                    </div>
+                                    <div class="activity-class-amateur">
+                                     <input type="radio" name="choose-add" id="add-amateur">
+                                     <label for="amateur">amateur</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="seventh-row-1024">
+                            <div class="practiced-sports-wrapper">
+                                <div class="practiced-sports">
+                                    <div>Practiced Sports</div>
+                                    <div class="sports">
+                                        <div>
+                                            <input type="checkbox" name="running" id="add-running" class="input-sport">
+                                            <label for="running" class="add-sport"> running </label>
+                                        </div>
+                                        <div>
+                                             <input type="checkbox" name="cycling" id="add-cycling" class="input-sport">
+                                             <label for="cycling" class="add-sport"> cycling </label> 
+                                        </div>
+                                        <div>
+                                             <input type="checkbox" name="swimming" id="add-swimming" class="input-sport">
+                                             <label for="swimming" class="add-sport"> swimming </label>
+                                        </div>
+                                        <div>
+                                             <input type="checkbox" name="walking" id="add-walking" class="input-sport">
+                                             <label for="walking" class="add-sport"> walking </label>
+                                        </div>
+                                        <div>
+                                             <input type="checkbox" name="skiing" id="add-skiing" class="input-sport">
+                                             <label for="skiing" class="add-sport"> skiing </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="eight-row-1024">
+                            <div class="back-wrapper" style="display: none;">
+                                <button id="back-button" class="back-button">Back</button>
+                            </div>
+                            <div class="save-wrapper">
+                                <button id="save-button-1024" class="save-button">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="add-member-container">
+                    <div id="add-member-container-content">
+                    <div id="add-member-container-top">
+                    <div id="add-title"> Add new member</div>
+                    <div id="user-saved-toast" style="display: none;">
+                        <div id="saved-check">
+                            <div id="save-check-circle">
+                                <div id="save-tick-mark"></div>
+                            </div>
+                        </div>
+                        <div id="saved-text">User Saved Succesfully</div>
+                    </div>
+                 </div>
+                    <hr>
+                    <div class="first-row">
+                            <div class="first-name-wrapper">
+                                <label class="first-name" placeholder="dsads">First Name</label>
+                                <input id="add-first-name-text" type="text" required>
+                            </div>
+                            <div class="last-name-wrapper">
+                                <label class="last-name">Last Name</label>
+                                <input id="add-last-name-text" type="text" required>
+                            </div>
+                    </div>
+                    <div id="second-row" class="second-row">
+                        <div id="address-wrapper" class="address-wrapper">
+                            <label class="address">Address</label>
+                            <input id="add-address-text" type="text" required>
+                        </div>
+                        <div class="zip-code-wrapper">
+                            <label class="zip-code">Zip Code</label>
+                            <input id="add-zip-code-text" type="text" required>
+                        </div>
+                        <div class="city-wrapper">
+                            <label class="city">City</label>
+                            <input id="add-city-text" type="text" required>
+                        </div>
+                        <div class="country-wrapper">
+                            <label class="country">Country</label>
+                            <input id="add-country-text" type="text" required>
+                        </div>
+                    </div>
+                    <div id="third-row" class="third-row">
+                        <div class="gender-wrapper">
+                            <label class="gender">Gender</label>
+                            <select id="add-gender">
+                                <option selected="true" disabled="disabled"></option>
+                                <option value="male"> Male </option>
+                                <option value="female"> Female </option>
+                                <option value="not-specified"> Not Specified </option>
+                            </select>
+                        </div>
+                        <div class="age-wrapper">
+                            <label class="age">Age</label>
+                            <input id="add-age-text" type="text" required>
+                        </div>
+                        <div class="activity-class-wrapper">
+                            <label class="activity-class">Activity Class</label>
+                            <div class="activity-class-buttons">
+                                <div class="activity-class-professional">
+                                 <input type="radio" name="choose-add" id="add-professional">
+                                 <label for="professional">professional</label>
+                                </div>
+                                <div class="activity-class-amateur">
+                                 <input type="radio" name="choose-add" id="add-amateur">
+                                 <label for="amateur">amateur</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="fourth-row" class="fourth-row">
+                        <div class="practiced-sports-wrapper">
+                            <div class="practiced-sports">
+                                <div>Practiced Sports</div>
+                                <div class="sports">
+                                    <div>
+                                        <input type="checkbox" name="running" id="add-running" class="input-sport">
+                                        <label for="running" class="add-sport"> running </label>
+                                    </div>
+                                    <div>
+                                         <input type="checkbox" name="cycling" id="add-cycling" class="input-sport">
+                                         <label for="cycling" class="add-sport"> cycling </label> 
+                                    </div>
+                                    <div>
+                                         <input type="checkbox" name="swimming" id="add-swimming" class="input-sport">
+                                         <label for="swimming" class="add-sport"> swimming </label>
+                                    </div>
+                                    <div>
+                                         <input type="checkbox" name="walking" id="add-walking" class="input-sport">
+                                         <label for="walking" class="add-sport"> walking </label>
+                                    </div>
+                                    <div>
+                                         <input type="checkbox" name="skiing" id="add-skiing" class="input-sport">
+                                         <label for="skiing" class="add-sport"> skiing </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="save-wrapper">
+                            <button id="save-button" class="save-button">Save</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div id="edit-member-container-1024">
+                    <div id="add-member-container-content">
+                        <div id="add-member-container-top">
+                            <div id="add-title"> Edit member</div>
+                        </div>
+                        <hr>
+                        <div id="first-row-1024">
+                            <div class="first-name-wrapper">
+                                <label class="first-name">First Name</label>
+                                <input class="edit-first-name" type="text" required id="edit-first-name-1024">
+                            </div>
+                            <div class="last-name-wrapper">
+                                <label class="last-name">Last Name</label>
+                                <input class="edit-last-name" type="text" required id="edit-last-name-1024">
+                            </div>
+                        </div>
+                        <div id="second-row-1024">
+                            <div id="address-wrapper" class="address-wrapper">
+                                <label class="address">Address</label>
+                                <input class="edit-address" type="text" required id="edit-address-1024">
+                            </div>
+                        </div>
+                        <div id="third-row-1024">
+                            <div class="city-wrapper">
+                                <label class="city">City</label>
+                                <input class="edit-city" type="text" required id="edit-city-1024">
+                            </div>
+                            <div class="zip-code-wrapper">
+                                <label class="zip-code">Zip Code</label>
+                                <input class="edit-zip-code" type="text" required id="edit-zip-code-1024">
+                            </div>
+                        </div>
+                        <div id="fourth-row-1024">
+                            <div class="country-wrapper">
+                                <label class="country">Country</label>
+                                <input class="edit-country" type="text" required id="edit-country-1024">
+                            </div>
+                            <div class="age-wrapper">
+                                <label class="age">Age</label>
+                                <input class="edit-age" type="text" required id="edit-age-1024">
+                            </div>
+                        </div>
+                        <div id="fifth-row-1024">
+                            <div class="gender-wrapper">
+                                <label class="gender">Gender</label>
+                                <select class="edit-gender" id="edit-gender-1024">
+                                    <option selected="true" disabled="disabled"></option>
+                                    <option value="male"> Male </option>
+                                    <option value="female"> Female </option>
+                                    <option value="not-specified"> Not Specified </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div id="sixth-row-1024">
+                            <div class="activity-class-wrapper">
+                                <label class="activity-class">Activity Class</label>
+                                <div class="activity-class-buttons">
+                                    <div class="activity-class-professional">
+                                     <input type="radio" name="choose-add" id="add-professional" class="edit-professional">
+                                     <label for="professional">professional</label>
+                                    </div>
+                                    <div class="activity-class-amateur">
+                                     <input type="radio" name="choose-add" id="add-amateur" class="edit-amateur">
+                                     <label for="amateur">amateur</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="seventh-row-1024">
+                            <div class="practiced-sports-wrapper">
+                                <div class="practiced-sports">
+                                    <div>Practiced Sports</div>
+                                    <div class="sports">
+                                        <div>
+                                            <input type="checkbox" name="running" id="add-running" class="edit-input edit-running">
+                                            <label for="running" class="add-sport"> running </label>
+                                        </div>
+                                        <div>
+                                             <input type="checkbox" name="cycling" id="add-cycling" class="edit-input edit-cycling">
+                                             <label for="cycling" class="add-sport"> cycling </label> 
+                                        </div>
+                                        <div>
+                                             <input type="checkbox" name="swimming" id="add-swimming" class="edit-input edit-swimming">
+                                             <label for="swimming" class="add-sport"> swimming </label>
+                                        </div>
+                                        <div>
+                                             <input type="checkbox" name="walking" id="add-walking" class="edit-input edit-walking">
+                                             <label for="walking" class="add-sport"> walking </label>
+                                        </div>
+                                        <div>
+                                             <input type="checkbox" name="skiing" id="add-skiing" class="edit-input edit-skiing">
+                                             <label for="skiing" class="add-sport"> skiing </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="eight-row-1024">
+                            <div class="back-wrapper">
+                                <button id="back-button-1024" class="back-button">Back</button>
+                            </div>
+                            <div class="save-wrapper">
+                                <button id="update-button-1024" class="save-button">Update</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="edit-member-container">
+                    <div id="add-member-container-content">
+                        <div id="edit-member-container-top">
+                            <div id="edit-title"> Edit member</div>
+                            <div id="error-toast" style="display: none;">
+                                <div id="error-mark">
+                                    <div id="error-circle">
+                                        <div id="error-mark">X</div>
+                                    </div>
+                                </div>
+                                <div id="error-title">Error while trying to update member!</div>
+                            </div>
+                        </div>
+                    <hr>
+                    <div class="first-row">
+                            <div class="first-name-wrapper">
+                                <label class="first-name">First Name</label>
+                                <input class="edit-first-name" id="edit-first-name" type="text">
+                            </div>
+                            <div class="last-name-wrapper">
+                                <label class="last-name">Last Name</label>
+                                <input class="edit-last-name" id="edit-last-name" type="text">
+                            </div>
+                    </div>
+                    <div id="second-row" class="second-row">
+                        <div class="address-wrapper">
+                            <label class="address">Address</label>
+                            <input class="edit-address" id="edit-address" type="text">
+                        </div>
+                        <div class="zip-code-wrapper">
+                            <label class="zip-code">Zip Code</label>
+                            <input class="edit-zip-code" id="edit-zip-code" type="text">
+                        </div>
+                        <div class="city-wrapper">
+                            <label class="city">City</label>
+                            <input class="edit-city" id="edit-city" type="text">
+                        </div>
+                        <div class="country-wrapper">
+                            <label class="country">Country</label>
+                            <input class="edit-country" id="edit-country" type="text">
+                        </div>
+                    </div>
+                    <div id="third-row" class="third-row">
+                        <div class="gender-wrapper">
+                            <label class="gender">Gender</label>
+                            <select class="edit-gender" id="edit-gender">
+                                <option selected = "true" disabled="disabled"></option>
+                                <option value="male"> Male </option>
+                                <option value="female"> Female </option>
+                                <option value="not-specified"> Not Specified </option>
+                            </select>
+                        </div>
+                        <div class="age-wrapper">
+                            <label class="age">Age</label>
+                            <input class="edit-age" id="edit-age" type="text">
+                        </div>
+                        <div class="activity-class-wrapper">
+                            <label class="activity-class">Activity Class</label>
+                            <div class="activity-class-buttons">
+                                <div class="activity-class-professional">
+                                 <input type="radio" name="choose-edit" id="edit-professional" class="edit-professional">
+                                 <label for="edit-professional">professional</label>
+                                </div>
+                                <div class="activity-class-amateur">
+                                 <input type="radio" name="choose-edit" id="edit-amateur" class="edit-amateur">
+                                 <label for="edit-amateur">amateur</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="fourth-row" class="fourth-row">
+                        <div class="practiced-sports-wrapper">
+                            <div class="practiced-sports">
+                                <div>Practiced Sports</div>
+                                <div id="edit-sports" class="sports">
+                                    <div>
+                                        <input type="checkbox" id="edit-running" class="edit-input edit-running" name="running">
+                                        <label for="running" class="edit-sport"> running </label>
+                                    </div>
+                                    <div>
+                                         <input type="checkbox" id="edit-cycling" class="edit-input edit-cycling" name="cycling">
+                                         <label for="cycling" class="edit-sport"> cycling </label>
+                                    </div>
+                                    <div>
+                                         <input type="checkbox" id="edit-swimming" class="edit-input edit-swimming" name="swimming">
+                                         <label for="swimming" class="edit-sport"> swimming </label>
+                                    </div>
+                                    <div>
+                                         <input type="checkbox" id="edit-walking" class="edit-input edit-walking" name="walking">
+                                         <label for="edit-walking" class="edit-sport"> walking </label>
+                                    </div>
+                                    <div>
+                                         <input type="checkbox" id="edit-skiing" class="edit-input edit-skiing" name="skiing">
+                                         <label for="edit-skiing" class="edit-sport"> skiing </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="back-wrapper" style="display: none;">
+                            <button id="back-button" class="back-button">Back</button>
+                        </div>
+                        <div class="save-wrapper">
+                            <button id="update-button" class="save-button">Update</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <footer id="footer-1024">
+                    <div id="footer-info">
+                        <ul>
+                            <div id="footer-first-column">
+                                 <li id="footer-recent-news">Recent News</li>
+                                 <li id="footer-about-us">About Us</li>
+                            </div>
+                            <div id="footer-second-column">
+                                 <li id="footer-services">Services</li>
+                                 <li id="footer-contact-us">Contact Us</li>
+                            </div>
+                            <div></div>
+                            <div></div>
+                        </ul>
+                    </div>
+                </footer>
+                <footer>
+                    <div id="footer-info">
+                        <ul>
+                            <li id="footer-recent-news">Recent News</li>
+                            <li id="footer-about-us">About Us</li>
+                            <li id="footer-services">Services</li>
+                            <li id="footer-contact-us">Contact Us</li>
+                            <div></div>
+                            <div></div>
+                        </ul>
+                    </div>
+                </footer>
+            </main>
+        </div>
+    </div>
+    </layout>
+    <div id="ghost-div"></div>
+    <div id="delete-modal" class="delete-modal" style="display: none;">
+        <div id="delete-modal-box">
+            <header id="modal-header">
+                <div id="modal-header-text">Delete Member</div>
+            </header>
+            <div id="modal-content"> </div>
+            <footer id="modal-footer">
+                <button id="modal-no-button">No</button>
+                <button id="modal-yes-button">Yes</button>
+            </footer>
+        </div>
+    </div>
+    <span class="span-value"></span>
+</body>
+</html>
